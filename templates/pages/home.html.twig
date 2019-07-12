@@ -6,12 +6,12 @@
         <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, eveniet, odio? Asperiores at cum dicta dignissimos earum, eligendi facere libero neque pariatur praesentium quisquam ratione repellendus reprehenderit sequi sit vero.</span><span>Accusamus, accusantium deserunt dolore ex impedit nam, nostrum quaerat quas qui sunt suscipit, veniam. Amet animi, consequuntur cumque dolor illo nihil nobis omnis quam quibusdam! Aliquam ipsam non unde? Velit.</span><span>Accusantium aliquam, aperiam autem corporis earum enim est laudantium numquam quo rerum. At atque, commodi, consectetur cupiditate dolor eum eveniet, excepturi ipsam iste laboriosam natus nihil quam sed sequi veritatis.</span><span>Aperiam beatae cum excepturi iure. Alias assumenda, consectetur culpa dolor doloremque dolores, eligendi est exercitationem impedit, laborum mollitia nesciunt nihil nostrum quasi quia quidem quisquam quo quos repellat voluptas voluptatum!</span></p>
     </div>
 
-    <div class="containera">
+    <div class="container">
         <h2>Les dernier bien</h2>
         <div class="row flex">
             {% for property in properties %}
-                <div class="card col-3 m-2">
-                    <div class="card-body">
+                <div class="card  m-2">
+                    <div class="card-body" style="width: 16em;">
                         <h5 class="card-title">
                             <a href="{{ path('property.show', {id: property.id, slug: property.slug}) }}">{{ property.title }}</a>
                         </h5>
